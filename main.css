@@ -1,0 +1,146 @@
+@keyframes uplift{
+    0%{
+        top:100px;
+        transform: rotate(45deg); 
+    }
+    100%{
+        top:0px;
+        transform: rotate(0deg); 
+    }
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+section{
+    font-family:sans-serif;
+    font-size: 100px;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+div.typeface-description{
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+div.typeface-description-lower{
+    position:absolute;
+    bottom:100px;
+    left:100px;
+}
+div.typeface-description-lower p{
+   font-size: 12px;
+}
+div.typeface-description p{
+    font-size: 22px;
+}
+section.one{
+    background-color: aquamarine;
+    scroll-snap-align: start;
+}
+div.container-one{
+    overflow: hidden;
+}
+div.container-one span{
+    position:relative;
+    top: 100px;
+    animation: uplift 1s 1s cubic-bezier(0, 0.64, 0, 1.05) forwards;
+}
+div.container-one span:nth-child(2){
+    animation-delay: 1.1s;
+}
+div.container-one span:nth-child(3){
+    animation-delay: 1.2s;
+}
+div.container-one span:nth-child(4){
+    animation-delay: 1.3s;
+}
+div.container-one span:nth-child(5){
+    animation-delay: 1.4s;
+}
+
+
+
+
+section.two{
+    background-color: rgb(0, 162, 255);
+    scroll-snap-align: start;
+}
+div.container-two{
+    overflow: hidden;
+    transform: rotate(45deg);
+}
+div.container-two span{
+    position:relative;
+    top: 100px;
+}
+div.container-two span:nth-child(2){
+    animation-delay: 1.1s;
+}
+div.container-two span:nth-child(3){
+    animation-delay: 1.2s;
+}
+div.container-two span:nth-child(4){
+    animation-delay: 1.3s;
+}
+div.container-two span:nth-child(5){
+    animation-delay: 1.4s;
+}
+div.container-two span:nth-child(6){
+    animation-delay: 1.5s;
+}
+span.in-view{
+    animation: uplift 1s 1s cubic-bezier(0, 0.64, 0, 1.05) forwards;
+}
+
+
+
+section.three{
+    background-color: rgb(143, 143, 221);
+    scroll-snap-align: start;
+}
+div.container-three{
+    overflow: hidden;
+}
+div.container-three span{
+    position:relative;
+    top: 100px;
+}
+div.container-three span:nth-child(2){
+    animation-delay: 1.1s;
+}
+div.container-three span:nth-child(3){
+    animation-delay: 1.2s;
+}
+div.container-three span:nth-child(4){
+    animation-delay: 1.3s;
+}
+div.container-three span:nth-child(5){
+    animation-delay: 1.4s;
+}
+div.container-three span:nth-child(6){
+    animation-delay: 1.5s;
+}
+
+
+
+
+div.wiper{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:black;
+    opacity: 1;
+    font-family:sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color:white;
+    transform: translateY(100%);
+}
